@@ -2,6 +2,7 @@ import styled from "styled-components";
 import BannerGirl from "../../assets/banner-girl.png";
 
 export const Container = styled.div`
+  width: 45rem;
   height: 100vh;
   text-align: center;
 
@@ -16,6 +17,11 @@ export const Container = styled.div`
   position: relative;
 `;
 
+export const Label = styled.strong`
+  font-size: 2.6rem;
+  line-height: 3.6rem;
+`;
+
 export const SignInWithInstagram = styled.a`
   background: #ffcd1e;
   margin-top: 3.2rem;
@@ -26,6 +32,7 @@ export const SignInWithInstagram = styled.a`
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+  border-radius: 10px;
 
   display: flex;
   justify-content: center;
@@ -33,7 +40,7 @@ export const SignInWithInstagram = styled.a`
   transition: filter .2s;
 
   svg {
-    margin-right: 1.6rem;
+    margin-right: 0.3rem;
   }
 
   &:hover {

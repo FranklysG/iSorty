@@ -1,17 +1,14 @@
-
-import { Container } from "./App.style";
-import { Login } from "./components/Login";
-import { Message } from "./components/Message";
 import { GlobalStyle } from "./global/styles/theme";
+import { Home } from "./pages/Home";
+import { Sort } from "./pages/Sort";
 
 function App() {
 
   return (
-    <Container>
-      <Message />
-      <Login />
+    <>
+      <Sort />
       <GlobalStyle />
-    </Container>
+    </>
   );
 }
 

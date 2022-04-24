@@ -1,14 +1,16 @@
 import { FaInstagram } from 'react-icons/fa';
-import { Container, SignInWithInstagram } from "./style";
+import { Container, Label, SignInWithInstagram } from "./style";
 
 export function Login() {
 
     return (
         <Container>
-            <strong>Entre e compartilhe sua mensagem</strong>
+            <Label>
+                Seus sorteios de forma rapida e simples
+            </Label>
             <SignInWithInstagram>
                 <FaInstagram size={24} />
-                Entrar com github
+                Entrar com instagram
             </SignInWithInstagram>
         </Container>
     )
