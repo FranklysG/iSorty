@@ -3,6 +3,8 @@ import { FaHatCowboySide } from "react-icons/fa";
 import Logo from "../../assets/logo.png";
 
 import AvatarVitoria from "../../assets/avatar_vitoria.jpg";
+import AvatarFranklys from "../../assets/avatar_franklys.jpg";
+import AvatarNattan from "../../assets/avatar_nattan.jpg";
 import {
   Container,
   MakeRaffle,
@@ -21,6 +23,16 @@ export function Raffle() {
         <MessageUser>
           <UserImage>
             <img src={AvatarVitoria} alt="user_name" />
+          </UserImage>
+        </MessageUser>
+        <MessageUser>
+          <UserImage>
+            <img src={AvatarFranklys} alt="user_name" />
+          </UserImage>
+        </MessageUser>
+        <MessageUser>
+          <UserImage>
+            <img src={AvatarNattan} alt="user_name" />
           </UserImage>
         </MessageUser>
       </Slid>

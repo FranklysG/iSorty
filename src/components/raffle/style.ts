@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
 `
 
 export const MakeRaffle = styled.a`
@@ -33,8 +33,57 @@ export const MakeRaffle = styled.a`
   }
 `
 export const Slid = styled.div`
+  display: flex;
 
+  img {
+    width: 20rem !important;
+    height: 20rem !important;
+    border-radius: 50%;
+    border: 1px solid #121214;
+    
+  }
+
+  div:nth-child(1){
+    div {
+      position: relative;
+      right: -55px;
+      top: 15px;
+
+      z-index: -1;
+
+      img {
+        width: 16rem !important;
+        height: 16rem !important;
+      }
+    }
+  }
+
+  div:nth-child(3){
+    div {
+      position: relative;
+      left: -55px;
+      top: 15px;
+
+      z-index: -1;
+
+      img {
+        width: 16rem !important;
+        height: 16rem !important;
+      }
+    }
+  }
+  
 `;
+
+
+export const Messages = styled.div`
+  max-width: 44rem;
+`
+
+export const MessageContent = styled.p`
+  font-size: 2rem;
+  line-height: 2.8rem;
+`
 
 export const MessageUser = styled.div`
   margin-top: 1.6rem;
@@ -62,18 +111,4 @@ export const UserImage = styled.div`
   background: linear-gradient(100deg, #ff008e 0.48%, #ffcd1e 100%);
   border-radius: 50%;
   line-height: 0;
-`
-
-export const Messages = styled.li`
-  max-width: 44rem;
-
-  &:nth-child(2) {
-    margin-left: 8rem;
-  }
-
-`
-
-export const MessageContent = styled.p`
-  font-size: 2rem;
-  line-height: 2.8rem;
 `
