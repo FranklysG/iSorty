@@ -19,8 +19,21 @@ export const Header = styled.div`
     color: #000 !important;
     background-color: #fff;
 
-`
+    input {
+      width: 14rem;
+      padding: 10px;
+      padding-left: -10px;
+      border: 1px solid #f2544d;
+      margin-bottom: -10px;
+      border-radius: 50px;
+      
+      &:focus {
+        border: 1px solid #f2544d;
+      }
+    }
 
+
+`
 
 export const MessageUser = styled.div`
   margin-top: 1.6rem;
