@@ -3,7 +3,8 @@ import Logo from '../../assets/logo.png';
 import AvatarFranklys from '../../assets/avatar_franklys.jpg';
 import AvatarNattan from '../../assets/avatar_nattan.jpg';
 import AvatarVitoria from '../../assets/avatar_vitoria.jpg';
-import { MessageListWrapper, MessageList, Messages, MessageContent, MessageUser, UserImage } from "./style";
+import { MessageListWrapper, MessageList, Messages, MessageContent } from "./style";
+import { MessageUser } from "../MessageUser";
 
 export function Message() {
   return (
@@ -15,36 +16,21 @@ export function Message() {
           <MessageContent>
             is simply dummy text of the printing and typesetting industry. Lorem 
           </MessageContent>
-          <MessageUser>
-            <UserImage>
-              <img src={AvatarFranklys} alt="user_name" />
-            </UserImage>
-            <span>franklysg</span>
-          </MessageUser>
+          <MessageUser user="franklysg" avatar={AvatarFranklys}/>
         </Messages>
 
         <Messages>
           <MessageContent>
             is simply dummy text of the printing and typesetting industry. Lorem 
           </MessageContent>
-          <MessageUser>
-            <UserImage>
-              <img src={AvatarNattan} alt="user_name" />
-            </UserImage>
-            <span>natan.alv_s</span>
-          </MessageUser>
+          <MessageUser user="natan.alv_s" avatar={AvatarNattan}/>
         </Messages>
 
         <Messages>
           <MessageContent>
             is simply dummy text of the printing and typesetting industry. Lorem 
           </MessageContent>
-          <MessageUser>
-            <UserImage>
-              <img src={AvatarVitoria} alt="user_name" />
-            </UserImage>
-            <span>vitoria.taveira</span>
-          </MessageUser>
+          <MessageUser user="vitoria.taveira" avatar={AvatarVitoria}/>
         </Messages>
         
       </MessageList>
