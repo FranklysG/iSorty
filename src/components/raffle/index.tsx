@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaHatCowboySide } from "react-icons/fa";
 import Logo from "../../assets/logo.png";
 
