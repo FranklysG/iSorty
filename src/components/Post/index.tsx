@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback, useEffect } from "react";
 import { useComments } from "../../hooks/useComments";
 
 import PostImg from "../../assets/post.jpg";
@@ -12,6 +12,23 @@ export function Post() {
     setUrlPost(url);
   }
 
+  const pasteFunction = useCallback(
+    (event: any) => {
+      if (event.ctrlKey && event.keyCode === 86) {
+        console.log('ctrl');
+
+      }
+    },
+    []
+  );
+
+  useEffect(() => {
+    document.addEventListener("keydown", pasteFunction, false);
+
+    return () => {
+      document.removeEventListener("keydown", pasteFunction, false);
+    };
+  }, [pasteFunction]);
   return (
     <Container>
       <Header>
@@ -21,7 +38,7 @@ export function Post() {
           </UserImage>
           <span>franklysg</span>
         </MessageUser>
-        <input type="text" onChange={(event) => handleAddedUrlPost(event.target.value)} placeholder="CLCHzYZgcZb"/>
+        <input id="codPost" type="text" maxLength={11} onChange={(event) => handleAddedUrlPost(event.target.value)} placeholder="CLCHzYZgcZb"/>
       </Header>
       <img src={PostImg} className="post" alt="psot-instagram" />
     </Container>

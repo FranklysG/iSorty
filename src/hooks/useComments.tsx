@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState, ReactNode, useCallback, useMemo } from "react";
+import React, { createContext, useContext, useState, ReactNode, useMemo } from "react";
 
 type CommentsValue = {
     comments: object | null;
@@ -22,7 +22,9 @@ function CommentsProvider({children}: CommentsProviderProps){
     }
     
     useMemo(() => {
-        console.log(url);
+        if(url.length <= 10 || url.length >= 13) return ;
+        
+        console.log(url.length);
     }, [url]);
 
     return (
