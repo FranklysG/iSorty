@@ -38,13 +38,13 @@ export function Raffle() {
       </Slid>
       <Messages>
         <MessageContent>
-          is simply dummy text of the printing and typesetting industry. Lorem
+          Ganhamos @thayslopes e @daniara.taveira marquem um amigo de vocês
         </MessageContent>
         <MessageUser>
           <UserImage>
             <img src={AvatarVitoria} alt="user_name" />
           </UserImage>
-          <span>franklysg</span>
+          <span>vitoria.taveira</span>
         </MessageUser>
       </Messages>
       <MakeRaffle>

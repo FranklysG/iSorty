@@ -8,6 +8,9 @@ function App() {
   return (
     <CommentsProvider>
       <Home />
+      <br />
+      <br />
+      <br />
       <Sort />
       <GlobalStyle />
     </CommentsProvider>

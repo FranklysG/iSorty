@@ -13,7 +13,7 @@ export function Message() {
       <MessageList>
         <Messages>
           <MessageContent>
-            is simply dummy text of the printing and typesetting industry. Lorem 
+          “Se você quer ser bem sucedido, precisa ter dedicação total, buscar seu último limite e dar o melhor de si.”
           </MessageContent>
           <MessageUser>
             <UserImage>
@@ -25,7 +25,7 @@ export function Message() {
 
         <Messages>
           <MessageContent>
-            is simply dummy text of the printing and typesetting industry. Lorem 
+          “Tenha a coragem de seguir seu coração e intuição. Eles, de certa forma, já sabem o que você realmente quer ser.”
           </MessageContent>
           <MessageUser>
             <UserImage>
@@ -37,7 +37,7 @@ export function Message() {
 
         <Messages>
           <MessageContent>
-            is simply dummy text of the printing and typesetting industry. Lorem 
+          “A força não vem de vencer. Suas lutas desenvolvem suas forças. Quando você atravessa dificuldades e decide não se render, isso é força.”
           </MessageContent>
           <MessageUser>
             <UserImage>
